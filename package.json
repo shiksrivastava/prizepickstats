@@ -8,5 +8,8 @@
     "lodash": "^4.17.21",
     "react-bootstrap": "^2.7.4",
     "react-modal": "^3.16.1"
+  },
+  "scripts": {
+    "start": "react-scripts start"
   }
 }
