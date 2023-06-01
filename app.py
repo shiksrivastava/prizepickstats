@@ -120,5 +120,5 @@ def fesh(name, category, dropdown, spec):
 
 
 if __name__ == '__main__':
-    app.run(host='192.168.86.30',port=42069, ssl_context='adhoc')
+    app.run(host='0.0.0.0',port=42069, ssl_context=('/etc/letsencrypt/live/prizepickstats.duckdns.org/fullchain.pem', '/etc/letsencrypt/live/prizepickstats.duckdns.org/privkey.pem'))
 
