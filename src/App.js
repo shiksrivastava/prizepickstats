@@ -251,7 +251,7 @@ function App() {
   const [resultText, setResultText] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:42069/api/' + String(selectedCategory))
+    fetch('https://prickpickstats.onrender.com/api/' + String(selectedCategory))
       .then(response => response.json())
       .then(data => {
         setImageUrls(data['imageUrls']);
@@ -260,7 +260,7 @@ function App() {
   }, [selectedCategory]);
 
   useEffect(() => {
-    fetch('http://localhost:42069/fesh/' + selectedTile)
+    fetch('https://prickpickstats.onrender.com/fesh/' + selectedTile)
       .then(response => response.json())
       .then(data => {
         setLog(data['log']);
