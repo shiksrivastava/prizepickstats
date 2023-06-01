@@ -120,5 +120,5 @@ def fesh(name, category, dropdown, spec):
 
 
 if __name__ == '__main__':
-    app.run(port=42069)
+    app.run(host='192.168.86.30',port=42069)
 

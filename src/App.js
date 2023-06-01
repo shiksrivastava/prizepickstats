@@ -251,7 +251,7 @@ function App() {
   const [resultText, setResultText] = useState('');
 
   useEffect(() => {
-    fetch('https://prickpickstats.onrender.com/api/' + String(selectedCategory))
+    fetch('http://136.24.115.201:42069/api/' + String(selectedCategory))
       .then(response => response.json())
       .then(data => {
         setImageUrls(data['imageUrls']);
@@ -260,7 +260,7 @@ function App() {
   }, [selectedCategory]);
 
   useEffect(() => {
-    fetch('https://prickpickstats.onrender.com/fesh/' + selectedTile)
+    fetch('http://136.24.115.201:42069/fesh/' + selectedTile)
       .then(response => response.json())
       .then(data => {
         setLog(data['log']);
