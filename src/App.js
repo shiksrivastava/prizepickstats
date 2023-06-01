@@ -251,7 +251,7 @@ function App() {
   const [resultText, setResultText] = useState('');
 
   useEffect(() => {
-    fetch('https://prizepickstats.duckdns.org:42069/api/' + String(selectedCategory))
+    fetch('https://prizepickstats.duckdns.org/api/' + String(selectedCategory))
       .then(response => response.json())
       .then(data => {
         setImageUrls(data['imageUrls']);
@@ -260,7 +260,7 @@ function App() {
   }, [selectedCategory]);
 
   useEffect(() => {
-    fetch('https://prizepickstats.duckdns.org:42069/fesh/' + selectedTile)
+    fetch('https://prizepickstats.duckdns.org/fesh/' + selectedTile)
       .then(response => response.json())
       .then(data => {
         setLog(data['log']);
