@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.2",
+    "@mui/x-data-grid": "^6.5.0",
+    "bootstrap": "^5.2.3",
+    "lodash": "^4.17.21",
+    "react-bootstrap": "^2.7.4",
+    "react-modal": "^3.16.1"
+  }
+}
